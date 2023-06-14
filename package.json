@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Davidvboxt/proof-of-concept#readme"
+    "url": "git+https://github.com/Davidvboxt/proof-of-concept"
   },
   "keywords": [
     "node"
@@ -21,9 +21,9 @@
   "author": "David",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Davidvboxt/proof-of-concept#readme/issues"
+    "url": "https://github.com/Davidvboxt/proof-of-concept/issues"
   },
-  "homepage": "https://github.com/Davidvboxt/proof-of-concept#readme#readme",
+  "homepage": "https://github.com/Davidvboxt/proof-of-conceptreadme",
   "dependencies": {
     "dotenv": "^16.1.4",
     "ejs": "^3.1.8",
