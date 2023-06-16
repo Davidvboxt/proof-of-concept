@@ -7,19 +7,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  /* nice scroll bar */
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f5f5f5;
-    border-radius: 50px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: var(--primary-clr);
-    border-radius: 50px;
-  }
-  
   body {
     position: relative;
     min-height: 100vh;
@@ -274,6 +261,16 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: #878895;
+  }
+
+  .days .marked::after {
+    content: '';
+    border-bottom: 3px dashed;
+    width: 60px;
+    height: 30px;
+    margin-top: 35px;
+    position: absolute;
+    padding-bottom: 4px;
   }
   
   /* media queries */
