@@ -339,5 +339,14 @@
     .right .today-date {
       padding: 20px;
     }
+    .days .marked::after {
+      content: '';
+      border-bottom: 3px dashed;
+      width: 34px;
+      height: 30px;
+      margin-top: -6px;
+      position: absolute;
+      padding-bottom: 4px;
+    }
   }
   
