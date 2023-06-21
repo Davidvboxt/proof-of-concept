@@ -16,57 +16,101 @@
                     <div>Za</div>
                 </div>
                 <div class="days">
+                    <% for (let i=1; i < 30; i++) { %>
 
-                    <div class="day prev-date">28</div>
-                    <div class="day prev-date">29</div>
-                    <div class="day prev-date">30</div>
-                    <div class="day prev-date">31</div>
-                    <div class="day ">1</div>
-                    <div class="day marked">2</div>
-                    <div class="day ">3</div>
-                    <div class="day ">4</div>
-                    <div class="day ">5</div>
-                    <div class="day ">6</div>
-                    <div class="day ">7</div>
-                    <div class="day marked">8</div>
-                    <div class="day ">9</div>
-                    <div class="day ">10</div>
-                    <div class="day ">11</div>
-                    <div class="day marked">12</div>
-                    <div class="day ">13</div>
-                    <div class="day ">14</div>
-                    <div class="day ">15</div>
-                    <div class="day ">16</div>
-                    <div class="day ">17</div>
-                    <div class="day ">18</div>
-                    <div class="day ">19</div>
-                    <div class="day ">20</div>
-                    <div class="day ">21</div>
-                    <div class="day marked today active">22</div>
-                    <div class="day ">23</div>
-                    <div class="day ">24</div>
-                    <div class="day ">25</div>
-                    <div class="day ">26</div>
-                    <div class="day ">27</div>
-                    <div class="day ">28</div>
-                    <div class="day ">29</div>
-                    <div class="day ">30</div>
-                    <div class="day next-date">1</div>
-
+                        <a href="/?datum=<%= i %>"
+                            class="day<% if ( i == [22]) { %> marked today active <% } %><% if ( i == [12]) { %> marked <% } %><% if ( i == [3]) { %> marked <% } %>">
+                            <%= i %>
+                        </a>
+                        <% } %>
                 </div>
-
             </div>
         </div>
         <div class="right">
             <div class="today-date">
-                <div class="event-day">Woe</div>
-                <div class="event-date">12 december 2022</div>
+                <h1 cla href="/?datum=...."="event-day">Donderdag</h1>
+                <h2 class="event-date">
+                    22 Juni
+                </h2>
             </div>
             <div class="events">
-                Test Test
 
+
+                <% if (birthdaysThisMonth.length==0) { %>
+
+                    <div class="event_box">
+
+                        Er is vandaag helaas niemand jarig
+
+                    </div>
+
+
+                    <% } else { %>
+
+                        <% birthdaysThisMonth.forEach(result=> { %>
+
+                            <div class="event_box">
+
+                                <%= result.full_name %> is vandaag jarig!
+
+                            </div>
+
+
+                            <% }) %>
+
+                                <% } %>
             </div>
         </div>
     </div>
 
     <%- include('./partials/foot') %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--
+                    <a href="/?datum=2023-05-28" class="day prev-date">28</a>
+                    <a href="/?datum=2023-05-29" class="day prev-date">29</a>
+                    <a href="/?datum=2023-05-30" class="day prev-date">30</a>
+                    <a href="/?datum=2023-05-31" class="day prev-date">31</a>
+                    <a href="/?datum=2023-06-01" class="day ">1</a>
+                    <a href="/?datum=...." class="day marked">2</a>
+                    <a href="/?datum=...." class="day ">3</a>
+                    <a href="/?datum=...." class="day ">4</a>
+                    <a href="/?datum=...." class="day ">5</a>
+                    <a href="/?datum=...." class="day ">6</a>
+                    <a href="/?datum=...." class="day ">7</a>
+                    <a href="/?datum=...." class="day marked">8</a>
+                    <a href="/?datum=...." class="day ">9</a>
+                    <a href="/?datum=...." class="day ">10</a>
+                    <a href="/?datum=...." class="day ">11</a>
+                    <a href="/?datum=...." class="day marked">12</a>
+                    <a href="/?datum=...." class="day ">13</a>
+                    <a href="/?datum=...." class="day ">14</a>
+                    <a href="/?datum=...." class="day ">15</a>
+                    <a href="/?datum=...." class="day ">16</a>
+                    <a href="/?datum=...." class="day ">17</a>
+                    <a href="/?datum=...." class="day ">18</a>
+                    <a href="/?datum=...." class="day ">19</a>
+                    <a href="/?datum=...." class="day ">20</a>
+                    <a href="/?datum=...." class="day ">21</a>
+                    <a href="/?datum=...." class="day marked today active">22</a>
+                    <a href="/?datum=...." class="day ">23</a>
+                    <a href="/?datum=...." class="day ">24</a>
+                    <a href="/?datum=...." class="day ">25</a>
+                    <a href="/?datum=...." class="day ">26</a>
+                    <a href="/?datum=...." class="day ">27</a>
+                    <a href="/?datum=...." class="day ">28</a>
+                    <a href="/?datum=...." class="day ">29</a>
+                    <a href="/?datum=...." class="day ">30</a>
+                    <a href="/?datum=...." class="day next-date">1</a>
+                    -->

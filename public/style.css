@@ -1,5 +1,6 @@
 :root {
     --primary-clr: #0D683B;
+    --jarig-clr: #0D683B;
   }
   * {
     margin: 0;
@@ -13,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #70B894;
+    background-color: #A8ABAE;
   }
   .container {
     position: relative;
@@ -21,7 +22,9 @@
     margin: 0 auto;
     color: #fff;
     display: flex;
-    
+  }
+  a {
+    text-decoration: none;
   }
   .left {
     width: 60%;
@@ -105,6 +108,7 @@
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 20px;
+    text-decoration: none;
   }
   .calendar .days .day {
     width: 14.28%;
@@ -190,7 +194,7 @@
   .right .today-date .event-date {
     font-size: 1rem;
     font-weight: 400;
-    color: #878895;
+    color: black;
   }
   .events {
     width: 100%;
@@ -238,6 +242,10 @@
   }
   .events .event:hover i {
     color: #fff;
+  }
+  .event_box{
+    padding-left: 49px;
+    margin: 16px;
   }
   .events .event .event-time {
     font-size: 0.8rem;
